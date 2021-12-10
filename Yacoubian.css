@@ -1,0 +1,247 @@
+body {
+  background-color: #242426;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242426;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #616161;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* fullbleed images */
+.imageFull {
+  filter:grayscale(100%);
+  width: 100%;
+  height: auto;
+}
+
+/* locked title on top */
+.title {
+  text-align: center;
+  color: ##e0e0e0;
+  font-size: 60px;
+  height: 100px;
+  padding: 7px;
+  font-family: 'Comfortaa';
+}
+/* scrollable content */
+.container {
+  background-color: #4d4d4d;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+.abstract {
+  background-color: #4d4d4d;
+  width: 100%;
+  height: auto;
+}
+
+/* stylize content */
+#name {
+  text-align: center;
+  grid-column-start: span 2;
+  color: #ffffff;
+  font-size: 40px;
+  margin: 15px;
+  font-family: 'Comfortaa';
+}
+
+#subtitle {
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 18px;
+  margin: -15px;
+  font-family: 'Comfortaa';
+  font-style: italic;
+}
+
+#text1 {
+  text-align: left;
+  color: #e0e0e0;
+  font-size: 18px;
+  font-family: 'Comfortaa';
+  font-weight: 100;
+  padding: 30px 100px 20px ;
+}
+
+#text2 {
+  text-align: left;
+  color: #e0e0e0;
+  font-size: 16px;
+  font-family: 'Comfortaa';
+  font-weight: 100;
+  padding: 20px 40px 20px;
+}
+
+#bibHeading {
+  text-align: left;
+  color: #e0e0e0;
+  font-size: 24px;
+  font-family: 'Comfortaa';
+  font-weight: 100;
+  padding: 40px 100px 0px;
+}
+
+#bibText {
+  text-align: left;
+  color: #e0e0e0;
+  font-size: 18px;
+  font-family: 'Comfortaa';
+  font-weight: 100;
+  padding: 0px 100px 20px;
+}
+
+
+/* map */
+.map {
+  background-color: #757575;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: calc(100vw - 500px) 500px;
+  gap: 0 px;
+  padding: 0px;
+  margin-left: -8px;
+}
+
+/* map selection*/
+.sidebar {
+  width: 500px;
+  height: calc(100vh - 100px);
+  background-color: #757575;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#charactersAll {
+  width: 500px;
+  height: calc(100vh - 100px);
+  background-color: #757575;
+  font-family: 'Comfortaa';
+  font-weight: 100;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px repeat(2, 1fr);
+  gap: 5px;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.return {
+  color: #e0e0e0;
+  border: none;
+  background-color: #757575;
+  font-family: 'Comfortaa';
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  align-content: space-evenly;
+  align-items: right;
+  padding: 10px;
+}
+
+
+.mapHeader {
+  grid-column-start: span 3;
+  color: #e0e0e0;
+  font-size: 30px;
+  font-family: 'Comfortaa';
+  font-weight: 300;
+  align-items: center;
+}
+
+.icon {
+  color: #e0e0e0;
+  font-family: 'Comfortaa';
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.icon button {
+  background-color: inherit;
+  filter: grayscale(100%);
+  float: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon button:hover {
+  filter:grayscale(0%);
+}
+
+#iconimage {
+  width: 100%;
+  height: auto;
+}
+
+.profile {
+  width: 500px;
+  height: calc(100vh - 100px);
+  background-color: #757575;
+  font-family: 'Comfortaa';
+  font-weight: 100;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 100px 300px 1fr;
+  gap: 5px;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+#profileHeader {
+  color: #e0e0e0;
+  font-size: 30px;
+  font-family: 'Comfortaa';
+  font-weight: 300;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+#sidemap {
+  width: 100%;
+  height: auto;
+}
